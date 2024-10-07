@@ -2,7 +2,7 @@
 
 Мини-игра 'Виселица', где нужно угадать слово записанное в текстовом файле, подбором букв. Дается 6 попыток. Слова и буквы приводятся к нижнему регистру.
 
-## Функция get_rand_word(filename) ##
+### Функция ```get_rand_word(filename)```###
 
 Открываем файл, читаем с него загаданное слово.
 ```commandline
@@ -11,7 +11,7 @@ def get_rand_word(filename):
         return choice([x.strip() for x in f]).lower()
 ```
 
-## Функция print_game(wrong, word, letters): ## 
+### Функция ```print_game(wrong, word, letters)``` ###
 
 Проверяем угадана ли буква, выводим пробел если нет, и показываем букву, если угадал.
 ```commandline
@@ -34,7 +34,7 @@ for i in word:
 print()
 ```
 
-## Функция get_letter(attempt, guess) ##
+### Функция ```get_letter(attempt, guess)``` ###
 Запрашиваем букву у пользователя, и проверяем это.
 ```commandline
 def get_letter(attempt, guess):
@@ -51,8 +51,7 @@ elif user_input in guess:
 ```        
 
 
-## Функция play() ##
-
+### Функция ```play()``` ###
 Проверка. Если буква угадана, она добавляется в список верных букв. 
 ```
 for i in word:
